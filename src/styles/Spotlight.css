@@ -1,0 +1,38 @@
+:root {
+  --spotlight-x: 50%;
+  --spotlight-y: 50%;
+}
+
+body {
+  min-height: 100vh;
+  background: oklch(0.2 0.04 265);
+  color: oklch(0.8786 0.0455 271.71);
+  font-family: system-ui, sans-serif;
+}
+
+.spotlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem;
+
+  /* prettier-ignore */
+  background: radial-gradient(
+    600px at var(--spotlight-x) var(--spotlight-y),
+    /* oklch(47.183% 0.29988 264.227 / 0.16), */
+    oklch(49.719% 0.27359 265.907 / 0.16),
+    transparent 80%
+  );
+
+  transition: background 0.05s linear;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
