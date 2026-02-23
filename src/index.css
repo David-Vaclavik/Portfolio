@@ -20,11 +20,11 @@ dialog {
 /* =========== reset ends here ============ */
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: oklch(90% 0.01 265);
+  color: oklch(92% 0.01 265);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -52,6 +52,20 @@ h1 {
   font-size: 3rem;
   line-height: 1.1;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 button {

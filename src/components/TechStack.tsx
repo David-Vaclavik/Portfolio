@@ -12,7 +12,7 @@ import "../styles/TechStack.css";
 export function TechStack() {
   return (
     <div className="tech-stack">
-      <h1>Tech Stack</h1>
+      <h2>Tech Stack</h2>
       <div className="tech-icons">
         <ul>
           <li>

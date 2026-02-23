@@ -15,3 +15,16 @@
   gap: 2rem;
   max-width: 768px;
 }
+
+.hero h3 {
+  color: oklch(80% 0.01 265);
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+
+  svg path {
+    fill: white !important;
+  }
+}
