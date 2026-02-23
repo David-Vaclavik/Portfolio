@@ -21,7 +21,7 @@ function App() {
             <a href="https://github.com/david-vaclavik" target="_blank" rel="noopener noreferrer">
               <GitHubDark width={24} />
             </a>
-            <a href="mailto:david.vaclavik@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:davidvaclavik.dv@gmail.com" target="_blank" rel="noopener noreferrer">
               <Gmail width={24} />
             </a>
           </div>
