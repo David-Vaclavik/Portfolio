@@ -12,19 +12,25 @@
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
-  gap: 2rem;
+  gap: 3rem;
   max-width: 768px;
 }
 
 .hero h3 {
   color: oklch(80% 0.01 265);
+  margin-bottom: 0.5rem;
 }
 
 .contact-links {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 
   svg path {
     fill: white !important;
+  }
+
+  img {
+    filter: invert(1);
   }
 }
