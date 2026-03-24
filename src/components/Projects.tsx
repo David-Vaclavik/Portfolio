@@ -1,6 +1,7 @@
 import "../styles/Projects.css";
 import wardrobeImage from "../assets/wardrobe-eshop.jpg";
 import chattrixImg from "../assets/chattrix.png";
+import { GitHubDark } from "@ridemountainpig/svgl-react";
 
 export function Projects() {
   return (
@@ -11,8 +12,22 @@ export function Projects() {
       <div className="project-card">
         <a href="https://chattrix-live.vercel.app/" target="_blank" rel="noopener noreferrer">
           <img src={chattrixImg} alt="Chattrix" />
+
           <div className="card-description">
-            <h3>Chattrix</h3>
+            <div className="card-header">
+              <h3>Chattrix</h3>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open("https://github.com/David-Vaclavik/chattrix", "_blank");
+                }}
+                className="github-link"
+              >
+                Source
+                <GitHubDark width={20} />
+              </button>
+            </div>
             <p>
               A full-stack real-time chat app where users can create rooms, invite others, and
               message each other instantly — no refresh needed. Built with Next.js App Router,
@@ -32,8 +47,22 @@ export function Projects() {
       <div className="project-card">
         <a href="https://wardrobe-eshop.vercel.app/" target="_blank" rel="noopener noreferrer">
           <img src={wardrobeImage} alt="Wardrobe E-Shop" />
+
           <div className="card-description">
-            <h3>Wardrobe E-Shop</h3>
+            <div className="card-header">
+              <h3>Wardrobe</h3>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open("https://github.com/David-Vaclavik/wardrobe-eshop", "_blank");
+                }}
+                className="github-link"
+              >
+                Source
+                <GitHubDark width={20} />
+              </button>
+            </div>
             <p>
               Frontend implementation of a e-commerce website, including product catalog navigation,
               filtering and sorting logic and persistent cart state.
