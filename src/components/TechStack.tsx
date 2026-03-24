@@ -6,6 +6,9 @@ import {
   JavaScript,
   ReactRouter,
   Git,
+  Nextjs,
+  TailwindCSS,
+  Supabase,
 } from "@ridemountainpig/svgl-react";
 import "../styles/TechStack.css";
 
@@ -20,12 +23,20 @@ export function TechStack() {
             <span>React</span>
           </li>
           <li>
+            <Nextjs width={20} />
+            <span>Next.js</span>
+          </li>
+          <li>
             <TypeScript width={20} />
             <span>TypeScript</span>
           </li>
           <li>
             <CSSNew width={20} />
             <span>CSS</span>
+          </li>
+          <li>
+            <TailwindCSS width={20} />
+            <span>Tailwind</span>
           </li>
           <li>
             <HTML5 width={20} />
@@ -42,6 +53,10 @@ export function TechStack() {
           <li>
             <Git width={20} />
             <span>Git</span>
+          </li>
+          <li>
+            <Supabase width={20} />
+            <span>Supabase</span>
           </li>
         </ul>
       </div>

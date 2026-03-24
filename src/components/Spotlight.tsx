@@ -8,9 +8,9 @@ export function Spotlight({ children }: PropsWithChildren) {
     if (!window.matchMedia("(pointer: fine)").matches) return;
 
     const handleMouseMove = (e: MouseEvent) => {
-      // Update CSS variables with mouse position
-      document.documentElement.style.setProperty("--spotlight-x", `${e.clientX}px`);
-      document.documentElement.style.setProperty("--spotlight-y", `${e.clientY}px`);
+      // Update CSS variables with mouse position relative to the document
+      document.documentElement.style.setProperty("--spotlight-x", `${e.pageX}px`);
+      document.documentElement.style.setProperty("--spotlight-y", `${e.pageY}px`);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
